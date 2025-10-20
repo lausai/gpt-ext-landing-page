@@ -1,9 +1,9 @@
 {
   "Hero": {
-    "title1": "Power",
-    "title2": "Kit",
+    "title1": "Chatgpt",
+    "title2": "PowerKit",
     "title3": "",
-    "description": "一个免费、开源且强大的落地页模板，适用于各种项目，让你在一个小时内搭建落地页。"
+    "description": "Organize chats with folders, bulk delete/export, use Vim keys & text expansion. The ultimate toolbox for power users."
   },
   "SocialProof": {
     "maker": "制作者快速开发"

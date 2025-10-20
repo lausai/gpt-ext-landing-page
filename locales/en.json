@@ -1,8 +1,8 @@
 {
   "Hero": {
-    "title1": "Power",
-    "title2": "Kit",
-    "description": "A free, open-source, and powerful landing page boilerplate, ideal for various projects, enabling you to create a landing page in under an hour."
+    "title1": "Chatgpt",
+    "title2": "PowerKit",
+    "description": "Organize chats with folders, bulk delete/export, use Vim keys & text expansion. The ultimate toolbox for power users."
   },
   "SocialProof": {
     "maker": "makers ship fast"
