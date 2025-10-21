@@ -29,13 +29,13 @@ const Header = () => {
         <div className="flex items-center md:gap-x-12 flex-1">
           <Link
             href="/"
-            aria-label="Landing Page Boilerplate"
-            title="Landing Page Boilerplate"
+            aria-label="Chatgpt Powerkit"
+            title="Chatgpt Powerkit"
             className="flex items-center space-x-1 font-bold"
           >
             <Image
               alt="Logo"
-              src="/logo.svg"
+              src="/logo.png"
               className="w-8 h-8"
               width={32}
               height={32}
