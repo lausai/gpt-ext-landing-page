@@ -7,71 +7,71 @@ import { MdCloudUpload } from "react-icons/md";
 
 export const FEATURES_EN = [
   {
-    title: "Open Source Advantage",
-    content: "Completely free with a wealth of customization options.",
+    title: "Bulk Chat Management",
+    content: "Quickly delete, archive, or export multiple chats in one go to streamline your workspace.",
     icon: BsGithub,
   },
   {
-    title: "Responsive Design",
+    title: "Folder-Based Organization",
     content:
-      "Templates meticulously designed to ensure optimal display on any device.",
+      "Create custom folders to categorize and organize your conversations by topic or project.",
     icon: FaMobileScreenButton,
   },
   {
-    title: "Easy Customization",
+    title: "Vim-Inspired Navigation",
     content:
-      "Effortlessly change colors, fonts, and layouts without any coding knowledge.",
+      "Use hjkl, 0, and Shift + $ to move your cursor like in Vim—directly inside the ChatGPT",
     icon: FaToolbox,
   },
   {
-    title: "SEO Optimized",
+    title: "Smart Text Expansions",
     content:
-      "Templates built with search engine optimization in mind to enhance your website's discoverability.",
+      "Type @keyword to instantly expand it into full phrases or templates from your custom list.",
     icon: MagnetIcon,
   },
   {
-    title: "One-Click Deployment",
+    title: "Personalized Presets",
     content:
-      "Tightly integrated with leading web hosting services for instant website publishing.",
+      "Define multiple preset configurations and switch between them to match different workflows.",
     icon: MdCloudUpload,
   },
   {
-    title: "Globalization Support",
+    title: "Seamless Chat Export",
     content:
-      "Supports multiple languages, making your website attractive to a global audience.",
+      "Export your selected chats as clean, structured JSON files for backup or analysis.",
     icon: FaEarthAsia,
   },
 ];
 
 export const FEATURES_ZH = [
   {
-    title: "开源优势",
-    content: "完全免费，提供丰富的自定义选项。",
+    title: "批量對話管理",
+    content: "一鍵快速刪除、封存或匯出多個對話，讓你的對話列表更整潔高效。",
     icon: BsGithub,
   },
   {
-    title: "响应式设计",
-    content: "精心设计的模板，确保在任何设备上都能优化显示。",
+    title: "資料夾分類管理",
+    content: "建立自訂資料夾，依照主題或專案整理對話，提升工作效率。",
     icon: FaMobileScreenButton,
   },
   {
-    title: "易于定制",
-    content: "轻松更改颜色、字体和布局，无需任何编码知识。",
+    title: "Vim 快捷鍵導覽",
+    content: "在輸入框中使用 hjkl、0、Shift + $ 等 Vim 鍵位，快速精準移動游標。",
     icon: FaToolbox,
   },
   {
-    title: "SEO优化",
-    content: "构建模板时考虑到搜索引擎优化，增强网站的可发现性。",
+    title: "智慧文字展開",
+    content: "輸入 @關鍵字 即可快速展開成自訂片語或常用範本，加快輸入效率。",
     icon: MagnetIcon,
   },
   {
-    title: "一键部署",
-    content: "与领先的网站托管服务紧密集成，实现即时网站发布。",
+    title: "個人化設定組",
+    content: "建立多組個人化設定，隨時切換以符合不同使用情境或偏好。",
     icon: MdCloudUpload,
   },
   {
-    title: "全球化支持",
-    content: "支持多种语言，让你的网站吸引全球受众。",
+    title: "順暢對話匯出",
+    content: "將選取的對話匯出成乾淨、結構化的 JSON 檔案，便於備份與分析。",
     icon: FaEarthAsia,
   },
 ];
