@@ -88,20 +88,6 @@ const Pricing = ({
           </Card>
         ))}
       </div>
-      <Spacer y={12} />
-      <div className="flex py-2">
-        <p className="text-default-400 text-center">
-          {locale.doYouLike}&nbsp;
-          <Link
-            color="foreground"
-            href={siteConfig.authors[0].twitter}
-            underline="always"
-            rel="noopener noreferrer nofollow"
-          >
-            {locale.follow}
-          </Link>
-        </p>
-      </div>
     </section>
   );
 };

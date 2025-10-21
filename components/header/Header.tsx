@@ -64,7 +64,6 @@ const Header = () => {
 
         {/* Right section */}
         <div className="hidden md:flex items-center justify-end gap-x-6 flex-1">
-          <HeaderLinks />
           <ThemedButton />
           <LangSwitcher />
         </div>

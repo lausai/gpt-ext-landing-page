@@ -26,8 +26,6 @@ export default async function HomeIndex({ lang }: { lang: string }) {
       {/* Pricing */}
       <Pricing id="Pricing" locale={dict.Pricing} langName={langName} />
 
-      {/* Testimonials */}
-      <Testimonials id="Testimonials" locale={dict.Testimonials} />
 
       {/* FAQ (Frequently Asked Questions) */}
       <FAQ id="FAQ" locale={dict.FAQ} langName={langName} />
