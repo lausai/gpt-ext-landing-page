@@ -42,15 +42,14 @@ const Hero = ({
       </section>
       {/* </motion.div> */}
       <div className="flex justify-center gap-4">
-        <CTAButton locale={CTALocale}></CTAButton>
         <Button variant="outline">
-          <Link href="https://nexty.dev/" className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2">
             <img
               src="/nexty-logo.png"
               alt="Nexty.dev Logo"
               className="w-4 h-4"
             />{" "}
-            Get SaaS Boilerplate
+            Get Chatgpt Powerkit
           </Link>
         </Button>
       </div>
