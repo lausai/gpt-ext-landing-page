@@ -66,7 +66,7 @@ const Pricing = ({
               <ul className="flex flex-col gap-2">
                 {tier.features?.map((feature) => (
                   <li key={feature} className="flex items-center gap-2">
-                    <FaCheck className="text-blue-500" />
+                    <FaCheck className="text-blue-500 flex-shrink-0" />
                     <p className="text-default-500">{feature}</p>
                   </li>
                 ))}
