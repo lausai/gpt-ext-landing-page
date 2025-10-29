@@ -38,19 +38,11 @@ const baseSiteConfig = {
     { name: 'buyMeCoffee', href: "https://www.buymeacoffee.com/weijunext", icon: SiBuymeacoffee }
   ],
   footerLinks: [
-    { name: 'email', href: "mailto:weijunext@gmail.com", icon: MdEmail },
-    { name: 'twitter', href: "https://twitter.com/weijunext", icon: BsTwitterX },
-    { name: 'github', href: "https://github.com/weijunext/", icon: BsGithub },
-    { name: 'buyMeCoffee', href: "https://www.buymeacoffee.com/weijunext", icon: SiBuymeacoffee },
-    { name: 'juejin', href: "https://juejin.cn/user/26044008768029", icon: SiJuejin },
-    { name: 'weChat', href: "https://weijunext.com/make-a-friend", icon: BsWechat }
+    { name: 'email', href: "samliu720@gmail.com", icon: MdEmail },
   ],
   footerProducts: [
-    { url: 'https://nexty.dev/', name: 'SaaS Starter' },
-    { url: 'https://landingpage.weijunext.com/', name: 'Landing Page Boilerplate' },
-    { url: 'https://weijunext.com/', name: 'J实验室' },
-    { url: 'https://nextjscn.org/', name: 'Next.js 中文文档' },
-    { url: 'https://github.com/weijunext/indie-hacker-tools', name: 'Indie Hacker Tools' },
+    { url: 'https://nexty.dev/', name: 'Privacy Policy' },
+    { url: 'https://landingpage.weijunext.com/', name: 'Terms of Services' },
   ]
 }
 
