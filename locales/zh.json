@@ -1,6 +1,6 @@
 {
   "Hero": {
-    "title1": "Chatgpt",
+    "title1": "ChatGPT",
     "title2": "PowerKit",
     "title3": "",
     "description": "Organize chats with folders, bulk delete/export, use Vim keys & text expansion. The ultimate toolbox for power users."
@@ -37,6 +37,6 @@
     "description1": "整理、匯出、輸入加速，專為進階用戶打造的一站式強化工具。"
   },
   "CTAButton": {
-    "title": "Get Chatgpt Powerkit"
+    "title": "Get ChatGPT Powerkit"
   }
 }

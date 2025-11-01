@@ -1,6 +1,6 @@
 {
   "Hero": {
-    "title1": "Chatgpt",
+    "title1": "ChatGPT",
     "title2": "PowerKit",
     "description": "Organize chats with folders, bulk delete/export, use Vim keys & text expansion. The ultimate toolbox for power users."
   },
@@ -36,6 +36,6 @@
     "description1": "Organize, export, and write smarter — all in one powerful extension built for power users."
   },
   "CTAButton": {
-    "title": "Get Chatgpt Powerkit"
+    "title": "Get ChatGPT Powerkit"
   }
 }
