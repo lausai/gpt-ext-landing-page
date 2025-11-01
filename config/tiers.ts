@@ -42,8 +42,8 @@ export const TIERS_EN: Array<Tier> = [
 export const TIERS_ZH: Array<Tier> = [
   {
     key: TiersEnum.Free,
-    title: "免费",
-    price: "免费",
+    title: "免費",
+    price: "免費",
     href: siteConfig.openSourceURL || "#",
     description: "免費體驗多項功能。",
     features: [
@@ -53,7 +53,7 @@ export const TIERS_ZH: Array<Tier> = [
       "批次刪除、封存或匯出對話",
       "使用 Vim 風格的鍵盤快捷鍵",
     ],
-    buttonText: "开始",
+    buttonText: "開始",
     buttonColor: "primary",
     buttonVariant: "solid",
   },
@@ -69,7 +69,7 @@ export const TIERS_ZH: Array<Tier> = [
       "個人化指令設定檔無限制",
       "自訂文字展開無限制",
     ],
-    buttonText: "联系我们",
+    buttonText: "聯絡我們",
     buttonColor: "default",
     buttonVariant: "flat",
   },
