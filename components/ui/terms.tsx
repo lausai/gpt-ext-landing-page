@@ -24,3 +24,12 @@ export function SectionTitle({
     <h3 className="text-3xl font-bold tracking-tight mt-2">{text}</h3>
   );
 }
+
+
+export function Email() {
+  return (
+    <a className="text-xl text-blue-600 dark:text-blue-500 hover:underline" href="mailto:samliu720@gmail.com">samliu720@gmail.com</a> 
+  );
+}
+
+

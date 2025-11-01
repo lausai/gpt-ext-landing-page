@@ -16,8 +16,7 @@ const baseSiteConfig = {
   authors: [
     {
       name: "ChatGPT Powerkit",
-      url: "https://weijunext.com",
-      twitter: 'https://twitter.com/weijunext',
+      url: "/",
     }
   ],
   creator: '@weijunext',

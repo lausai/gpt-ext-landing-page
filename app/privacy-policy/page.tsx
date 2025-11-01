@@ -1,4 +1,4 @@
-import { TitleListItem, ListItem, SectionTitle } from "@/components/ui/terms";
+import { TitleListItem, ListItem, SectionTitle, Email } from "@/components/ui/terms";
 
 
 export default async function PrivacyPolicyPage({
@@ -12,7 +12,7 @@ export default async function PrivacyPolicyPage({
         className="flex flex-col justify-center lg:max-w-7xl md:max-w-5xl w-[95%] mx-auto md:gap-3 pt-16"
       >
         <h3 className="tracking-tight mt-2">
-            Chatgpt Powerkit Privacy Policy        
+            ChatGPT Powerkit Privacy Policy        
         </h3>
         <h6 className="tracking-tight mt-2">
         Last Updated: October 30, 2025
@@ -80,7 +80,7 @@ export default async function PrivacyPolicyPage({
             <ListItem content="Request deletion of your account and all related data"></ListItem>
           </ul>
           <p className="text-xl">
-            To request deletion of your data, please contact us at <a className="text-xl text-blue-600 dark:text-blue-500 hover:underline" href="mailto:samliu720@gmail.com">samliu720@gmail.com</a> and include the email address associated with your account.
+            To request deletion of your data, please contact us at <Email></Email> and include the email address associated with your account.
 To protect your privacy and ensure the security of your information, we may need to verify your identity before processing your request — for example, by requiring the request to be sent from your registered email address.
 
 Once your identity is verified, we will process your deletion request within 30 days and notify you once the deletion is complete.
@@ -104,7 +104,7 @@ Please note that we may retain certain information if required by law or for leg
             If you have any questions about this Privacy Policy, feel free to reach out at:
           </p>
           <div className="pt-3">
-            <a className="text-xl text-blue-600 dark:text-blue-500 hover:underline" href="mailto:samliu720@gmail.com">samliu720@gmail.com</a> 
+            <Email></Email>
           </div>
         </div>
       </div>
