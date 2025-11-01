@@ -2,7 +2,7 @@ import { TitleListItem, ListItem, SectionTitle, Email } from "@/components/ui/te
 import Link from "next/link";
 
 
-export default async function PrivacyPolicyPage({
+export default async function TermsPage({
   params: { lang },
 }: {
   params: { lang: string };

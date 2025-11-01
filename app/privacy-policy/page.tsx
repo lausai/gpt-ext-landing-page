@@ -66,7 +66,7 @@ export default async function PrivacyPolicyPage({
             We do not sell or share your data with unrelated third parties.
           </p>
           <p className="text-xl pt-3">
-            We use Paddle to process payments. To verify purchases, we match the email you enter at checkout (via Paddle) with the email used in our extension. This email is not "shared" with Paddle by us — you provide it during checkout, and we use it as a user identifier.
+            We use Paddle to process payments. To verify purchases, we match the email you enter at checkout (via Paddle) with the email used in our extension. This email is not &quot;shared&quot; with Paddle by us — you provide it during checkout, and we use it as a user identifier.
           </p>
         </div>
 
