@@ -5,16 +5,17 @@ const FooterProducts = () => {
   const footerProducts = siteConfig.footerProducts;
 
   return (
-    <div className="flex space-x-2 flex-wrap justify-center">
+    <div className="flex space-x-1 flex-wrap justify-center">
+      <span>By installing or using ChatGPT Powerkit you agree to the</span>
       {footerProducts.map((product, index) => {
         return (
           <span key={product.url}>
-            <Link href={product.url} target="_blank">
+            <Link className="underline" href={product.url}>
               {product.name}
             </Link>
             {index !== footerProducts.length - 1 ? (
               <>
-                <span>{" • "}</span>
+                <span>{" and "}</span>
               </>
             ) : (
               <></>

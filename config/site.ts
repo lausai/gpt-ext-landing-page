@@ -41,8 +41,8 @@ const baseSiteConfig = {
     { name: 'email', href: "samliu720@gmail.com", icon: MdEmail },
   ],
   footerProducts: [
-    { url: 'https://nexty.dev/', name: 'Privacy Policy' },
-    { url: 'https://landingpage.weijunext.com/', name: 'Terms of Services' },
+    { url: '/privacy-policy', name: 'Privacy Policy' },
+    { url: '/terms', name: 'Terms of Services' },
   ]
 }
 
