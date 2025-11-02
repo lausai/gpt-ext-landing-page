@@ -26,7 +26,7 @@ export const TIERS_EN: Array<Tier> = [
     title: "Preminm Plan",
     href: siteConfig.authors[0].twitter || "#",
     description: "Unlock unlimited access for all features.",
-    price: "$2",
+    price: "$3",
     features: [
       "Everything in the Free plan",
       "Unlimited folders",
@@ -62,7 +62,7 @@ export const TIERS_ZH: Array<Tier> = [
     title: "Preminm",
     href: siteConfig.authors[0].twitter || "#",
     description: "升級即可無限制使用全部功能。",
-    price: "$2",
+    price: "$3",
     features: [
       "包含免費方案的所有功能",
       "資料夾數量無限制",
