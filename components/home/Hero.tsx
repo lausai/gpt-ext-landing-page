@@ -49,7 +49,7 @@ const Hero = ({
               alt="Nexty.dev Logo"
               className="w-4 h-4"
             />{" "}
-            Get ChatGPT Powerkit
+            Get AI Chat Powerkit
           </Link>
         </Button>
       </div>

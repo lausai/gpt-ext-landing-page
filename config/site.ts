@@ -6,7 +6,7 @@ import { SiBuymeacoffee, SiJuejin } from "react-icons/si";
 const OPEN_SOURCE_URL = 'https://github.com/weijunext/landing-page-boilerplate'
 
 const baseSiteConfig = {
-  name: "ChatGPT Powerkit",
+  name: "AI Chat Powerkit",
   description:
     "A free, open-source, and powerful landing page boilerplate, ideal for various projects, enabling you to create a landing page in under an hour.",
   url: "https://landingpage.weijunext.com",
@@ -15,7 +15,7 @@ const baseSiteConfig = {
   keywords: ["landing page boilerplate", "landing page template", "awesome landing page", "next.js landing page"],
   authors: [
     {
-      name: "ChatGPT Powerkit",
+      name: "AI Chat Powerkit",
       url: "/",
     }
   ],

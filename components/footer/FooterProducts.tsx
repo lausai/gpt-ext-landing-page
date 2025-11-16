@@ -6,7 +6,7 @@ const FooterProducts = () => {
 
   return (
     <div className="flex space-x-1 flex-wrap justify-center">
-      <span>By installing or using ChatGPT Powerkit you agree to the</span>
+      <span>By installing or using AI Chat Powerkit you agree to the</span>
       {footerProducts.map((product, index) => {
         return (
           <span key={product.url}>

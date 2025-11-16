@@ -13,13 +13,13 @@ export default async function TermsPage({
         className="flex flex-col justify-center lg:max-w-7xl md:max-w-5xl w-[95%] mx-auto md:gap-3 pt-16"
       >
         <h3 className="tracking-tight mt-2">
-            ChatGPT Powerkit Terms of Service
+            AI Chat Powerkit Terms of Service
         </h3>
         <h6 className="tracking-tight mt-2">
         Last Updated: October 30, 2025
         </h6>
         <p className="text-xl">
-          Welcome to ChatGPT Powerkit! This Terms of Service (“Terms”) governs your access to and use of our browser extension. By using ChatGPT Powerkit, you agree to be bound by these Terms.
+          Welcome to AI Chat Powerkit! This Terms of Service (“Terms”) governs your access to and use of our browser extension. By using AI Chat Powerkit, you agree to be bound by these Terms.
         </p>
       </div>
 
@@ -29,7 +29,7 @@ export default async function TermsPage({
         <SectionTitle text="Overview"></SectionTitle>
         <div>
           <p className="text-xl">
-            ChatGPT Powerkit is a browser extension designed to enhance your experience on ChatGPT.com. It allows features such as multi-chat export, folder organization, text expansions, and more.
+            AI Chat Powerkit is a browser extension designed to enhance your experience on ChatGPT.com. It allows features such as multi-chat export, folder organization, text expansions, and more.
           </p>
           <p className="text-xl pt-3">
             We are an independent developer and not affiliated with OpenAI.
@@ -149,7 +149,7 @@ export default async function TermsPage({
 
         <SectionTitle text="Limitation of Liability"></SectionTitle>
         <p className="text-xl">
-          We provide ChatGPT Powerkit “as is”. We are not liable for any loss or damage resulting from use of the extension, including but not limited to data loss, service outages, or third-party platform changes.
+          We provide AI Chat Powerkit “as is”. We are not liable for any loss or damage resulting from use of the extension, including but not limited to data loss, service outages, or third-party platform changes.
         </p>
 
         <SectionTitle text="Changes to These Terms"></SectionTitle>

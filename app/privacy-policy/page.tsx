@@ -13,7 +13,7 @@ export default async function PrivacyPolicyPage({
         className="flex flex-col justify-center lg:max-w-7xl md:max-w-5xl w-[95%] mx-auto md:gap-3 pt-16"
       >
         <h3 className="tracking-tight mt-2">
-            ChatGPT Powerkit Privacy Policy        
+            AI Chat Powerkit Privacy Policy        
         </h3>
         <h6 className="tracking-tight mt-2">
         Last Updated: October 30, 2025
