@@ -19,8 +19,8 @@ const baseSiteConfig = {
       url: "/",
     }
   ],
-  creator: '@weijunext',
-  openSourceURL: 'https://github.com/weijunext/landing-page-boilerplate',
+  creator: 'Sam Liu',
+  extensionUrl: '/#',
   themeColors: [
     { media: '(prefers-color-scheme: light)', color: 'white' },
     { media: '(prefers-color-scheme: dark)', color: 'black' },

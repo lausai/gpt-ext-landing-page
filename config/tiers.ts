@@ -7,7 +7,7 @@ export const TIERS_EN: Array<Tier> = [
     key: TiersEnum.Free,
     title: "Free Plan",
     price: "Free",
-    href: siteConfig.openSourceURL || "#",
+    href: siteConfig.extensionUrl,
     description:
       "Get access to many features for free.",
     features: [
@@ -23,10 +23,26 @@ export const TIERS_EN: Array<Tier> = [
   },
   {
     key: TiersEnum.Pro,
-    title: "Preminm Plan",
+    title: "Preminm Plan (Monthly)",
     href: siteConfig.authors[0].twitter || "#",
     description: "Unlock unlimited access for all features.",
     price: "$3",
+    features: [
+      "Everything in the Free plan",
+      "Unlimited folders",
+      "Unlimited custom instruction profiles",
+      "Unlimited custom text expansions"
+    ],
+    buttonText: "Upgrade to pro",
+    buttonColor: "default",
+    buttonVariant: "flat",
+  },
+  {
+    key: TiersEnum.Pro,
+    title: "Preminm Plan (Yearly)",
+    href: siteConfig.authors[0].twitter || "#",
+    description: "Unlock unlimited access for all features.",
+    price: "$30",
     features: [
       "Everything in the Free plan",
       "Unlimited folders",
@@ -44,7 +60,7 @@ export const TIERS_ZH: Array<Tier> = [
     key: TiersEnum.Free,
     title: "免費",
     price: "免費",
-    href: siteConfig.openSourceURL || "#",
+    href: siteConfig.extensionUrl,
     description: "免費體驗多項功能。",
     features: [
       "建立最多三個資料夾來整理對話",
