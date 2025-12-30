@@ -7,7 +7,7 @@ export const TIERS_EN: Array<Tier> = [
     key: TiersEnum.Free,
     title: "Free Plan",
     price: "Free",
-    href: siteConfig.extensionUrl,
+    href: siteConfig.extensionUrl || '#',
     description:
       "Get access to many features for free.",
     features: [
@@ -60,7 +60,7 @@ export const TIERS_ZH: Array<Tier> = [
     key: TiersEnum.Free,
     title: "免費",
     price: "免費",
-    href: siteConfig.extensionUrl,
+    href: siteConfig.extensionUrl || '#',
     description: "免費體驗多項功能。",
     features: [
       "建立最多三個資料夾來整理對話",

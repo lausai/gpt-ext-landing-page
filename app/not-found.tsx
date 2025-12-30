@@ -8,18 +8,10 @@ export default function NotFound() {
       <Image src="/404.svg" alt="404" width={128} height={128} />
       <div className="w-full text-center mt-8 flex flex-col sm:flex-row gap-2">
         <FollowButton name="Home" href="/" target="_self"></FollowButton>
-        {siteConfig.authors[0].twitter ? (
+        {siteConfig.extensionUrl ? (
           <FollowButton
-            name="Twitter/X"
-            href={siteConfig.authors[0].twitter}
-          ></FollowButton>
-        ) : (
-          <></>
-        )}
-        {siteConfig.openSourceURL ? (
-          <FollowButton
-            name="Github"
-            href={siteConfig.openSourceURL}
+            name="Powerkit"
+            href={siteConfig.extensionUrl}
           ></FollowButton>
         ) : (
           <></>

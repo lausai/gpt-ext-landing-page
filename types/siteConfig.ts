@@ -25,7 +25,7 @@ export type SiteConfig = {
   keywords: string[]
   authors: AuthorsConfig[]
   creator: string
-  openSourceURL?: string
+  extensionUrl?: string
   ogImage: string
   headerLinks: Link[]
   footerLinks: Link[],
