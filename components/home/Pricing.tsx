@@ -105,7 +105,7 @@ const Pricing = ({
         if (secondPrice && thirdPrice) {
           const monthTotal = Number(secondPrice.replace('$', '')) * 12;
           const yearTotal = Number(thirdPrice.replace('$', ''));
-          const savedPercent = safeRound(monthTotal - yearTotal / monthTotal * 100, 0);
+          const savedPercent = safeRound((monthTotal - yearTotal) / monthTotal * 100, 0);
 
           setDynamicPrices({
             second: secondPrice,
@@ -185,10 +185,25 @@ const Pricing = ({
               </CardHeader>
               <Divider />
               <CardBody className="gap-8">
-                <p className="flex items-baseline gap-1 pt-2">
+                <p className="flex gap-1 pt-2">
                   <span className="inline bg-gradient-to-br from-foreground to-foreground-600 bg-clip-text text-2xl font-semibold leading-7 tracking-tight text-transparent">
                     {priceText}
                   </span>
+                  {dynamicPrices.saved && index === 2 && (
+                    <span
+                      className="
+                        inline-flex items-center
+                        rounded-full
+                        bg-green-600 text-white
+                        px-3 py-1
+                        text-sm font-semibold
+                        shadow-md mx-2
+                      "
+                    >
+                    Save {dynamicPrices.saved}%
+                    </span>
+                  )}
+
                   {typeof tier.price !== "string" ? (
                     <span className="text-small font-medium text-default-400">
                       {priceText}
