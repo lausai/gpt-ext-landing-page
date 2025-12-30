@@ -159,13 +159,13 @@ const Pricing = ({
         {TIERS?.map((tier, index) => {
           let priceText;
           switch (index) {
-            case 1:
+            case 0:
               priceText = tier.price;
               break;
-            case 2:
+            case 1:
               priceText = dynamicPrices.second ?? '_'  // 還沒查到先顯示 placeholder
               break;
-            case 3:
+            case 2:
               priceText = dynamicPrices.third ?? '_'  // 還沒查到先顯示 placeholder
               break;
           }
