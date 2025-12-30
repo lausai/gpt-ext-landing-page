@@ -8,7 +8,7 @@ import SocialProof from "@/components/home/SocialProof";
 import Testimonials from "@/components/home/Testimonials";
 import { defaultLocale, getDictionary } from "@/lib/i18n";
 
-export default async function HomeIndex({ lang }: { lang: string }) {
+export default async function HomeIndex({ lang, prefillEmail }: { lang: string; prefillEmail: string | null; }) {
   const langName = lang || defaultLocale;
   const dict = await getDictionary(langName);
 
@@ -24,7 +24,7 @@ export default async function HomeIndex({ lang }: { lang: string }) {
       <Feature id="Features" locale={dict.Feature} langName={langName} />
 
       {/* Pricing */}
-      <Pricing id="Pricing" locale={dict.Pricing} langName={langName} />
+      <Pricing id="Pricing" locale={dict.Pricing} langName={langName} prefillEmail={prefillEmail} />
 
 
       {/* FAQ (Frequently Asked Questions) */}

@@ -18,16 +18,18 @@ import { siteConfig } from "@/config/site";
 import { ALL_TIERS } from "@/config/tiers";
 import { FaCheck } from "react-icons/fa";
 import { RoughNotation } from "react-rough-notation";
-import { safeRound } from "@/lib/utils";
+import { safeRound, isValidEmail } from "@/lib/utils";
 
 const Pricing = ({
   id,
   locale,
   langName,
+  prefillEmail
 }: {
   id: string;
   locale: any;
   langName: string;
+  prefillEmail: string | null;
 }) => {
   const TIERS = ALL_TIERS[`TIERS_${langName.toUpperCase()}`];
 
@@ -125,8 +127,6 @@ const Pricing = ({
     };
   }, [paddleLoaded, priceIds.second, priceIds.third]);
 
-
-
   return (
     <section
       id={id}
@@ -206,6 +206,8 @@ const Pricing = ({
               </CardBody>
               <CardFooter>
                 <Button
+                  // 一開始 disable，等到 price 查詢到後再 enable
+                  isDisabled={!pricesReady}
                   fullWidth
                   as={Link}
                   color={tier.buttonColor}

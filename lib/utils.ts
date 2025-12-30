@@ -17,3 +17,8 @@ export function safeRound(v: number, n: number) {
   }
   return Math.round(nv) / t
 }
+
+
+export function isValidEmail(email: string): boolean {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
