@@ -18,6 +18,7 @@ import { siteConfig } from "@/config/site";
 import { ALL_TIERS } from "@/config/tiers";
 import { FaCheck } from "react-icons/fa";
 import { RoughNotation } from "react-rough-notation";
+import { safeRound } from "@/lib/utils";
 
 const Pricing = ({
   id,
@@ -37,6 +38,7 @@ const Pricing = ({
   const [dynamicPrices, setDynamicPrices] = useState<{
     second?: string;
     third?: string;
+    saved?: number;
   }>({});
 
   // 控制按鈕：一開始 disable，等價格查到才 enable
@@ -99,9 +101,14 @@ const Pricing = ({
           null;
 
         if (secondPrice && thirdPrice) {
+          const monthTotal = Number(secondPrice.replace('$', '')) * 12;
+          const yearTotal = Number(thirdPrice.replace('$', ''));
+          const savedPercent = safeRound(monthTotal - yearTotal / monthTotal * 100, 0);
+
           setDynamicPrices({
             second: secondPrice,
             third: thirdPrice,
+            saved: savedPercent,
           });
         } else {
           console.error("PricePreview response missing expected totals", result);
