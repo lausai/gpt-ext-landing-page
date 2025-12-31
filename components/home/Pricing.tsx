@@ -127,6 +127,22 @@ const Pricing = ({
     };
   }, [paddleLoaded, priceIds.second, priceIds.third]);
 
+  // Upgrade pro button handler
+  const onUpgradeBtnClick = (index: number) => {
+    const Paddle = (window as any).Paddle;
+    const priceId = index === 1 ? 'pri_01kbjcn8zrztb2c34kfjzgx8zv' : 'pri_01kbkqk45hywm63gzhqd00sd1k';
+    const param: { items: { priceId: string, quantity: number }[], customer?: any } = { 
+      items: [{ priceId, quantity: 1 }],
+    };
+    
+    if (prefillEmail)
+        param.customer = { email: prefillEmail }
+
+    Paddle.Checkout.open(param);
+  };
+
+
+
   return (
     <section
       id={id}
@@ -226,10 +242,11 @@ const Pricing = ({
                   fullWidth
                   as={Link}
                   color={tier.buttonColor}
-                  href={tier.href}
+                  href={index === 0 ? tier.href : undefined}
                   variant={tier.buttonVariant}
                   target="_blank"
                   rel="noopener noreferrer nofollow"
+                  onClick={index === 0 ? undefined : () => onUpgradeBtnClick(index)}
                 >
                   {tier.buttonText}
                 </Button>
