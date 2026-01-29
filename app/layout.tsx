@@ -27,7 +27,6 @@ export const metadata = {
   icons: siteConfig.icons,
   metadataBase: siteConfig.metadataBase,
   openGraph: siteConfig.openGraph,
-  twitter: siteConfig.twitter,
 };
 export const viewport: Viewport = {
   themeColor: siteConfig.themeColors,

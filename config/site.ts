@@ -8,11 +8,18 @@ const OPEN_SOURCE_URL = 'https://github.com/weijunext/landing-page-boilerplate'
 const baseSiteConfig = {
   name: "AI Chat Powerkit",
   description:
-    "A free, open-source, and powerful landing page boilerplate, ideal for various projects, enabling you to create a landing page in under an hour.",
+    "Boost your ChatGPT productivity with bulk chat management, folders, exports, and power-user tools. Organize, clean up, and customize your ChatGPT experience effortlessly.",
   url: "https://landingpage.weijunext.com",
   ogImage: "https://landingpage.weijunext.com/og.png",
   metadataBase: '/',
-  keywords: ["landing page boilerplate", "landing page template", "awesome landing page", "next.js landing page"],
+  keywords: [
+    "chatgpt extension",
+    "chatgpt productivity",
+    "chatgpt bulk delete",
+    "chatgpt folders",
+    "chatgpt export",
+    "chatgpt power tools"
+  ],
   authors: [
     {
       name: "AI Chat Powerkit",
