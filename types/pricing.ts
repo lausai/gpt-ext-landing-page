@@ -1,13 +1,15 @@
 import type { ButtonProps } from "@nextui-org/react";
 
 export enum FrequencyEnum {
+  Monthly = "monthly",
   Yearly = "yearly",
   Quarterly = "quarterly",
 }
 
 export enum TiersEnum {
   Free = "free",
-  Pro = "pro",
+  ProMonthly = "pro_monthly",
+  ProYearly = "pro_yearly",
   Team = "team",
   Customize = "customize"
 }

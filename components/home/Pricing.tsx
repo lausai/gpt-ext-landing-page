@@ -57,6 +57,15 @@ const Pricing = ({
   );
 
   useEffect(() => {
+    // 語系切換時會重載 Pricing 組件, 但是paddleLoaded是 false, 
+    // 如果有 Paddle.PricePreview, 表示 Paddle.js 已載入, 如果paddleLoaded
+    // 是 false 就設定 true 觸發重新 render 並且抓取價格 
+    const Paddle = (window as any).Paddle
+    if (Paddle?.PricePreview && !paddleLoaded) {
+      setPaddleLoaded(true)
+      return
+    }
+    
     // 只有在 Paddle.js 載入完成後才查價
     if (!paddleLoaded) return;
 

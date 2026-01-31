@@ -1,6 +1,6 @@
 
 import { siteConfig } from "@/config/site";
-import { Tier, TiersEnum } from "@/types/pricing";
+import { Tier, TiersEnum, FrequencyEnum } from "@/types/pricing";
 
 export const TIERS_EN: Array<Tier> = [
   {
@@ -22,8 +22,8 @@ export const TIERS_EN: Array<Tier> = [
     buttonVariant: "solid",
   },
   {
-    key: TiersEnum.Pro,
-    title: "Preminm Plan (Monthly)",
+    key: TiersEnum.ProMonthly,
+    title: "Pro Plan (Monthly)",
     href: siteConfig.authors[0].twitter || "#",
     description: "Unlock unlimited access for all features.",
     price: "$3",
@@ -38,8 +38,8 @@ export const TIERS_EN: Array<Tier> = [
     buttonVariant: "flat",
   },
   {
-    key: TiersEnum.Pro,
-    title: "Preminm Plan (Yearly)",
+    key: TiersEnum.ProYearly,
+    title: "Pro Plan (Yearly)",
     href: siteConfig.authors[0].twitter || "#",
     description: "Unlock unlimited access for all features.",
     price: "$30",
@@ -74,8 +74,8 @@ export const TIERS_ZH: Array<Tier> = [
     buttonVariant: "solid",
   },
   {
-    key: TiersEnum.Pro,
-    title: "Preminm",
+    key: TiersEnum.ProMonthly,
+    title: "專業方案 (月繳)",
     href: siteConfig.authors[0].twitter || "#",
     description: "升級即可無限制使用全部功能。",
     price: "$3",
@@ -85,7 +85,23 @@ export const TIERS_ZH: Array<Tier> = [
       "個人化指令設定檔無限制",
       "自訂文字展開無限制",
     ],
-    buttonText: "聯絡我們",
+    buttonText: "升級為專業版",
+    buttonColor: "default",
+    buttonVariant: "flat",
+  },
+  {
+    key: TiersEnum.ProYearly,
+    title: "專業方案 (年繳)",
+    href: siteConfig.authors[0].twitter || "#",
+    description: "升級即可無限制使用全部功能。",
+    price: "$30",
+    features: [
+      "包含免費方案的所有功能",
+      "資料夾數量無限制",
+      "個人化指令設定檔無限制",
+      "自訂文字展開無限制",
+    ],
+    buttonText: "升級為專業版",
     buttonColor: "default",
     buttonVariant: "flat",
   },
