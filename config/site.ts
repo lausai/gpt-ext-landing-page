@@ -9,8 +9,8 @@ const baseSiteConfig = {
   name: "AI Chat Powerkit",
   description:
     "Boost your ChatGPT productivity with bulk chat management, folders, exports, and power-user tools. Organize, clean up, and customize your ChatGPT experience effortlessly.",
-  url: "/",
-  ogImage: "https://landingpage.weijunext.com/og.png",
+  url: "https://www.chatgptpowerkit.com",
+  ogImage: "https://www.chatgptpowerkit.com/og.png",
   metadataBase: '/',
   keywords: [
     "chatgpt extension",
