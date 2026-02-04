@@ -15,6 +15,9 @@ const GuideflowEmbed = () => {
     // 這個 div 邊邊就有一層白邊, 設定 background-color 也無法消除
     // 手寫一個空白頁面嵌入 guideflow 連結也會這樣, 感覺是 guideflow bug
     // 所以就設定 inline style 為 light 避掉這個 bug
+    
+    // webkitallowfullscreen / mozallowfullscreen 是為了支援 Safari/Firefox 全螢幕功能
+    // React 不會自動輸出，需用字串屬性寫入 HTML
     <div
       style={{
         position: "relative",
@@ -35,10 +38,10 @@ const GuideflowEmbed = () => {
         }}
         scrolling="no"
         allow="clipboard-read; clipboard-write"
-        webkitAllowFullScreen
-        mozAllowFullScreen
         allowFullScreen
         allowTransparency
+        webkitallowfullscreen=""
+        mozallowfullscreen=""
       />
     </div>
   )
