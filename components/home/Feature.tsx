@@ -1,6 +1,7 @@
 import { ALL_FEATURES } from "@/config/feature";
 import React from "react";
 import { RoughNotation } from "react-rough-notation";
+import GuideflowEmbed from "@/components/home/GuideflowEmbed"
 
 const Feature = ({
   id,
@@ -50,6 +51,8 @@ const Feature = ({
           </div>
         ))}
       </div>
+      
+      <GuideflowEmbed />
     </section>
   );
 };
