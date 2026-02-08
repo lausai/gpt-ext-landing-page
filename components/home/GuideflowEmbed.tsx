@@ -21,14 +21,14 @@ const GuideflowEmbed = () => {
     <div
       style={{
         position: "relative",
-        paddingBottom: "calc(52.61455525606469% + 47px)",
+        paddingBottom: "calc(56.437768240343345% + 47px)",
         height: 0,
         colorScheme: "light"
       }}
     >
       <iframe
-        id="xrgmlw5c1r"
-        src="https://app.guideflow.com/embed/xrgmlw5c1r"
+        id="dkdgq7zcgk"
+        src="https://app.guideflow.com/embed/dkdgq7zcgk"
         width="100%"
         height="100%"
         style={{
