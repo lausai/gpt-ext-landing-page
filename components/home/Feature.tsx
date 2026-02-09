@@ -1,7 +1,9 @@
-import { ALL_FEATURES } from "@/config/feature";
+import { ALL_FEATURES, ALL_FEATURE_BLOCKS } from "@/config/feature";
 import React from "react";
 import { RoughNotation } from "react-rough-notation";
 import GuideflowEmbed from "@/components/home/GuideflowEmbed"
+import { FeatureBlock } from './FeatureBlock'
+
 
 const Feature = ({
   id,
@@ -13,6 +15,8 @@ const Feature = ({
   langName: string;
 }) => {
   const FEATURES = ALL_FEATURES[`FEATURES_${langName.toUpperCase()}`];
+  const FEATURE_BLOCKS = ALL_FEATURE_BLOCKS[`FEATURE_BLOCK_${langName.toUpperCase()}`]
+
   return (
     <section
       id={id}
@@ -52,7 +56,15 @@ const Feature = ({
         ))}
       </div>
       
-      <GuideflowEmbed />
+      {/*<GuideflowEmbed />*/}
+
+      {FEATURE_BLOCKS.map((feature, index) => (
+        <FeatureBlock
+          key={index}
+          {...feature}
+          reverse={index % 2 === 1}
+        />
+      ))}
     </section>
   );
 };

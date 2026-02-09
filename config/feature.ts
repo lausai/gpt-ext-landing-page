@@ -76,6 +76,46 @@ export const FEATURES_ZH = [
 ];
 
 
+export const FEATURE_BLOCK_EN = [
+  {
+    title: "Test title",
+    description: "Create folders and subfolders to keep conversations structured and easy to revisit.",
+    imageSrc: "/og.png",
+    imageRatio: 0.5,
+    items: [
+      'Nested folders for long-term projects',
+      'Drag & drop chats effortlessly',
+      'Drag & drop chats effortlessly',
+      'Drag & drop chats effortlessly',
+      'Drag & drop chats effortlessly',
+      'Drag & drop chats effortlessly',
+      'Drag & drop chats effortlessly',
+      'Drag & drop chats effortlessly',
+    ],
+  },
+  {
+    title: "Test title",
+    description: "Create folders and subfolders to keep conversations structured and easy to revisit.",
+    imageSrc: "/og.png",
+    imageRatio: 0.5,
+    items: [
+      'Nested folders for long-term projects',
+      'Drag & drop chats effortlessly',
+    ],
+  },
+  {
+    title: "Test title",
+    description: "Create folders and subfolders to keep conversations structured and easy to revisit.",
+    imageSrc: "/og.png",
+    imageRatio: 0.5,
+    items: [
+      'Nested folders for long-term projects',
+      'Drag & drop chats effortlessly',
+    ],
+  },
+]
+
+
 interface FeaturesCollection {
   [key: `FEATURES_${string}`]: {
     title: string;
@@ -84,7 +124,22 @@ interface FeaturesCollection {
   }[];
 }
 
+interface FeatureBlocksCollection {
+  [key: `FEATURE_BLOCK_${string}`]: {
+    title: string;
+    description: string;
+    imageSrc: string;
+    imageRatio: number;
+    items: string[];
+  }[];
+}
+
 export const ALL_FEATURES: FeaturesCollection = {
   FEATURES_EN,
   FEATURES_ZH,
+}
+
+
+export const ALL_FEATURE_BLOCKS: FeatureBlocksCollection = {
+  FEATURE_BLOCK_EN,
 }
