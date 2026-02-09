@@ -37,7 +37,7 @@ export function FeatureBlock({
 
   return (
     <div
-      className={`flex flex-col lg:flex-row items-center gap-12 ${
+      className={`my-24 flex flex-col lg:flex-row items-center gap-12 ${
         reverse ? 'lg:flex-row-reverse' : ''
       }`}
     >
@@ -52,11 +52,11 @@ export function FeatureBlock({
 
       {/* Text */}
       <div className="w-full" style={{ width: textWidth }}>
-        <h3 className="text-2xl font-semibold tracking-tight">
+        <h3 className="text-3xl font-semibold tracking-tight">
           {title}
         </h3>
 
-        <p className="mt-4 text-base text-gray-600 dark:text-gray-400">
+        <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
           {description}
         </p>
 
@@ -70,7 +70,7 @@ export function FeatureBlock({
                   <div className="text-primary">
                     <CheckIcon />
                   </div>
-                  <span className="text-sm text-gray-700 dark:text-gray-300">
+                  <span className="text-base text-gray-700 dark:text-gray-300">
                     {text}
                   </span>
                 </li>

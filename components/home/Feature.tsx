@@ -56,7 +56,7 @@ const Feature = ({
         ))}
       </div>
       
-      {/*<GuideflowEmbed />*/}
+      <GuideflowEmbed />
 
       {FEATURE_BLOCKS.map((feature, index) => (
         <FeatureBlock
