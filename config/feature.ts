@@ -78,42 +78,84 @@ export const FEATURES_ZH = [
 
 export const FEATURE_BLOCK_EN = [
   {
-    title: "Test title",
-    description: "Create folders and subfolders to keep conversations structured and easy to revisit.",
+    title: "Chat Management",
+    description: "Manage large volumes of conversations efficiently with bulk actions and structured organization.",
     imageSrc: "/og.png",
     imageRatio: 0.5,
     items: [
-      'Nested folders for long-term projects',
-      'Drag & drop chats effortlessly',
-      'Drag & drop chats effortlessly',
-      'Drag & drop chats effortlessly',
-      'Drag & drop chats effortlessly',
-      'Drag & drop chats effortlessly',
-      'Drag & drop chats effortlessly',
-      'Drag & drop chats effortlessly',
+      "Bulk archive, delete, and export chats in one action",
+      "Export conversations as structured JSON files",
+      "Organize chats into folders and nested subfolders",
+      "Move multiple conversations between folders at once"
     ],
   },
   {
-    title: "Test title",
-    description: "Create folders and subfolders to keep conversations structured and easy to revisit.",
+    title: "Faster Input, Smarter Control",
+    description: "Speed up how you write prompts with text expansion and keyboard-driven navigation built directly into the chat input",
     imageSrc: "/og.png",
     imageRatio: 0.5,
     items: [
-      'Nested folders for long-term projects',
-      'Drag & drop chats effortlessly',
+      "Expand shortcuts into full prompts while typing",
+      "Use multiple text expansions in a single input",
+      "Navigate and edit the input box efficiently with Vim-style keys",
+      "Reduce mouse usage and keep your focus on writing",
     ],
   },
   {
-    title: "Test title",
-    description: "Create folders and subfolders to keep conversations structured and easy to revisit.",
+    title: "Personalization Profiles",
+    description: "Save multiple personalization profiles and switch between them to match different tasks, roles, or writing styles.",
     imageSrc: "/og.png",
     imageRatio: 0.5,
     items: [
-      'Nested folders for long-term projects',
-      'Drag & drop chats effortlessly',
+      "Create and save multiple personalization profiles",
+      "Switch profiles instantly without reconfiguring settings",
+      "Use different styles or instructions for different contexts",
+      "Keep your preferred setup ready for every task",
     ],
   },
 ]
+
+
+
+export const FEATURE_BLOCK_ZH = [
+  {
+    title: "聊天管理",
+    description: "透過批次操作與結構化整理方式，高效管理大量聊天內容。",
+    imageSrc: "/og.png",
+    imageRatio: 0.5,
+    items: [
+      "一次完成多筆聊天的封存、刪除與匯出",
+      "將聊天內容匯出為結構化的 JSON 檔案",
+      "使用資料夾與巢狀子資料夾整理聊天內容",
+      "一次將多筆聊天移動到指定的資料夾",
+    ],
+  },
+  {
+    title: "更快輸入，更好掌控",
+    description: "透過文字展開與鍵盤導向的操作方式，加快撰寫提示詞並提升輸入時的掌控感。",
+    imageSrc: "/og.png",
+    imageRatio: 0.5,
+    items: [
+      "在輸入時將快捷字串展開為完整提示詞",
+      "在同一個輸入框中多次使用文字展開",
+      "使用 Vim 風格快捷鍵高效瀏覽與編輯輸入內容",
+      "減少滑鼠操作，專注於文字輸入本身",
+    ],
+  },
+  {
+    title: "個人化設定檔",
+    description: "儲存多組個人化設定，並依不同任務、角色或寫作風格快速切換。",
+    imageSrc: "/og.png",
+    imageRatio: 0.5,
+    items: [
+      "建立並儲存多組個人化設定檔",
+      "即時切換設定，無需重新調整參數",
+      "針對不同情境使用不同風格或指示",
+      "隨時套用最適合當下需求的設定",
+    ],
+  },
+]
+
 
 
 interface FeaturesCollection {
@@ -142,4 +184,5 @@ export const ALL_FEATURES: FeaturesCollection = {
 
 export const ALL_FEATURE_BLOCKS: FeatureBlocksCollection = {
   FEATURE_BLOCK_EN,
+  FEATURE_BLOCK_ZH,
 }
