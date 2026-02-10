@@ -39,7 +39,7 @@ const GuideflowEmbed = () => {
         scrolling="no"
         allow="clipboard-read; clipboard-write"
         allowFullScreen
-        allowTransparency
+        allowtransparency=""
         webkitallowfullscreen=""
         mozallowfullscreen=""
       />
