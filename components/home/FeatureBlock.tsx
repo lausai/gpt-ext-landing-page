@@ -56,7 +56,7 @@ export function FeatureBlock({
           {title}
         </h3>
 
-        <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
+        <p className="mt-4 text-xl text-gray-600 dark:text-gray-400">
           {description}
         </p>
 
