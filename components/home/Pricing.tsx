@@ -15,7 +15,7 @@ import {
 } from "@nextui-org/react";
 
 import { siteConfig } from "@/config/site";
-import { ALL_TIERS } from "@/config/tiers";
+import { ALL_TIERS, PADDLE_TOKEN, PADDLE_ENV_SENDBOX } from "@/config/tiers";
 import { FaCheck } from "react-icons/fa";
 import { RoughNotation } from "react-rough-notation";
 import { safeRound, isValidEmail } from "@/lib/utils";
@@ -50,8 +50,8 @@ const Pricing = ({
   // second: 月訂閱 id, third 年訂閱 id
   const priceIds = useMemo(
     () => ({
-      second: "pri_01kbjcn8zrztb2c34kfjzgx8zv",     // 月訂閱
-      third: "pri_01kbkqk45hywm63gzhqd00sd1k",      // 年訂閱
+      second: TIERS[1].priceId,     // 月訂閱
+      third: TIERS[2].priceId,      // 年訂閱
     }),
     []
   );
@@ -139,7 +139,7 @@ const Pricing = ({
   // Upgrade pro button handler
   const onUpgradeBtnClick = (index: number) => {
     const Paddle = (window as any).Paddle;
-    const priceId = index === 1 ? 'pri_01kbjcn8zrztb2c34kfjzgx8zv' : 'pri_01kbkqk45hywm63gzhqd00sd1k';
+    const priceId = index === 1 ? TIERS[1].priceId : TIERS[2].priceId;
     const param: { items: { priceId: string, quantity: number }[], customer?: any } = { 
       items: [{ priceId, quantity: 1 }],
     };
@@ -165,9 +165,11 @@ const Pricing = ({
         onLoad={() => {
           // 只有 onLoad 代表 paddle.js 真正可用（避免 race condition）
           const Paddle = (window as any).Paddle;
-          Paddle.Environment.set("sandbox");
+          if (PADDLE_ENV_SENDBOX)
+            Paddle.Environment.set("sandbox");
+
           Paddle.Initialize({ 
-            token: 'test_a8adafbd4b537bbd797101b1eee'
+            token: PADDLE_TOKEN
           });
  
           setPaddleLoaded(true);

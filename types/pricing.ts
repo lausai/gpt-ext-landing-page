@@ -33,4 +33,5 @@ export type Tier = {
   buttonText: string;
   buttonColor?: ButtonProps["color"];
   buttonVariant: ButtonProps["variant"];
+  priceId: string;
 };

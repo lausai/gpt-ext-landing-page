@@ -20,6 +20,7 @@ export const TIERS_EN: Array<Tier> = [
     buttonText: "Get started",
     buttonColor: "primary",
     buttonVariant: "solid",
+    priceId: "",
   },
   {
     key: TiersEnum.ProMonthly,
@@ -36,6 +37,7 @@ export const TIERS_EN: Array<Tier> = [
     buttonText: "Upgrade to pro",
     buttonColor: "default",
     buttonVariant: "flat",
+    priceId: "pri_01kbjcn8zrztb2c34kfjzgx8zv",
   },
   {
     key: TiersEnum.ProYearly,
@@ -52,6 +54,7 @@ export const TIERS_EN: Array<Tier> = [
     buttonText: "Upgrade to pro",
     buttonColor: "default",
     buttonVariant: "flat",
+    priceId: "pri_01kbkqk45hywm63gzhqd00sd1k",
   },
 ];
 
@@ -72,6 +75,7 @@ export const TIERS_ZH: Array<Tier> = [
     buttonText: "開始",
     buttonColor: "primary",
     buttonVariant: "solid",
+    priceId: "",
   },
   {
     key: TiersEnum.ProMonthly,
@@ -88,6 +92,7 @@ export const TIERS_ZH: Array<Tier> = [
     buttonText: "升級為專業版",
     buttonColor: "default",
     buttonVariant: "flat",
+    priceId: "pri_01kbjcn8zrztb2c34kfjzgx8zv",
   },
   {
     key: TiersEnum.ProYearly,
@@ -104,6 +109,7 @@ export const TIERS_ZH: Array<Tier> = [
     buttonText: "升級為專業版",
     buttonColor: "default",
     buttonVariant: "flat",
+    priceId: "pri_01kbkqk45hywm63gzhqd00sd1k",
   },
 ];
 
@@ -116,3 +122,6 @@ export const ALL_TIERS: TiersCollection = {
   TIERS_EN,
   TIERS_ZH,
 }
+
+export const PADDLE_TOKEN: string = "test_a8adafbd4b537bbd797101b1eee"
+export const PADDLE_ENV_SENDBOX: boolean = true
