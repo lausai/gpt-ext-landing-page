@@ -45,8 +45,7 @@ const Hero = ({
         <Button variant="outline">
           <Link href="/" className="flex items-center gap-2">
             <img
-              src="/nexty-logo.png"
-              alt="Nexty.dev Logo"
+              src="/P.png"
               className="w-4 h-4"
             />{" "}
             Get AI Chat Powerkit
