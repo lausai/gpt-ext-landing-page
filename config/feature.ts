@@ -25,7 +25,7 @@ export const FEATURES_EN = [
   {
     title: "Smart Text Expansions",
     content:
-      "Type @keyword to instantly expand it into full phrases or templates from your custom list.",
+      "Type #keyword to instantly expand it into full phrases or templates from your custom list.",
     icon: MdTextFields,
   },
   {
@@ -60,7 +60,7 @@ export const FEATURES_ZH = [
   },
   {
     title: "智慧文字展開",
-    content: "輸入 @關鍵字 即可快速展開成自訂片語或常用範本，加快輸入效率。",
+    content: "輸入 #關鍵字 即可快速展開成自訂片語或常用範本，加快輸入效率。",
     icon: MdTextFields,
   },
   {
