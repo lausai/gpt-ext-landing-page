@@ -43,7 +43,11 @@ const Hero = ({
       {/* </motion.div> */}
       <div className="flex justify-center gap-4">
         <Button variant="outline">
-          <Link href="/" className="flex items-center gap-2">
+          <Link 
+            href="https://chromewebstore.google.com/detail/ai-chat-powerkit-%E2%80%93-advanc/cdkbdnkdhigfpgmkjifmpdkdbbopmiip" 
+            className="flex items-center gap-2"
+            target="_blank"
+          >
             <img
               src="/P.png"
               className="w-4 h-4"

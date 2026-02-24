@@ -27,10 +27,11 @@ const Header = () => {
         {/* Left section */}
         <div className="flex items-center md:gap-x-12 flex-1">
           <Link
-            href="/"
-            aria-label="Chatgpt Powerkit"
-            title="Chatgpt Powerkit"
+            href="https://chromewebstore.google.com/detail/ai-chat-powerkit-%E2%80%93-advanc/cdkbdnkdhigfpgmkjifmpdkdbbopmiip"
+            aria-label="AI Chat Powerkit"
+            title="AI Chat Powerkit"
             className="flex items-center space-x-1 font-bold"
+            target="_blank"
           >
             <Image
               alt="Logo"
