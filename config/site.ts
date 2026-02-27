@@ -44,7 +44,7 @@ const baseSiteConfig = {
     { name: 'buyMeCoffee', href: "https://www.buymeacoffee.com/weijunext", icon: SiBuymeacoffee }
   ],
   footerLinks: [
-    { name: 'email', href: "samliu720@gmail.com", icon: MdEmail },
+    { name: 'email', href: "mailto:samliu720@gmail.com", icon: MdEmail },
   ],
   footerProducts: [
     { url: '/privacy-policy', name: 'Privacy Policy' },
