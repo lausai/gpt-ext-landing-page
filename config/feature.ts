@@ -75,12 +75,30 @@ export const FEATURES_ZH = [
   },
 ];
 
+interface FeatureBlockMedia {
+  type: "image" | "video";
+  src: string;
+  alt?: string;
+  poster?: string;
+}
 
-export const FEATURE_BLOCK_EN = [
+interface FeatureBlockItem {
+  title: string;
+  description: string;
+  media: FeatureBlockMedia;
+  imageRatio: number;
+  items: string[];
+}
+
+export const FEATURE_BLOCK_EN: FeatureBlockItem[] = [
   {
     title: "Chat Management",
     description: "Manage large volumes of conversations efficiently with bulk actions and structured organization.",
-    imageSrc: "/feature1.png",
+    media: {
+      type: "image",
+      src: "/feature1.png",
+      alt: "Chat management feature demo",
+    },
     imageRatio: 0.5,
     items: [
       "Bulk archive, delete, and export chats in one action",
@@ -92,7 +110,11 @@ export const FEATURE_BLOCK_EN = [
   {
     title: "Faster Input, Smarter Control",
     description: "Speed up how you write prompts with text expansion and keyboard-driven navigation built directly into the chat input",
-    imageSrc: "/feature2.png",
+    media: {
+      type: "image",
+      src: "/feature2.png",
+      alt: "Faster input and smarter control feature demo",
+    },
     imageRatio: 0.5,
     items: [
       "Expand shortcuts into full prompts while typing",
@@ -104,7 +126,11 @@ export const FEATURE_BLOCK_EN = [
   {
     title: "Personalization Profiles",
     description: "Save multiple personalization profiles and switch between them to match different tasks, roles, or writing styles.",
-    imageSrc: "/feature3.png",
+    media: {
+      type: "image",
+      src: "/feature3.png",
+      alt: "Personalization profiles feature demo",
+    },
     imageRatio: 0.5,
     items: [
       "Create and save multiple personalization profiles",
@@ -117,11 +143,15 @@ export const FEATURE_BLOCK_EN = [
 
 
 
-export const FEATURE_BLOCK_ZH = [
+export const FEATURE_BLOCK_ZH: FeatureBlockItem[] = [
   {
     title: "聊天管理",
     description: "透過批次操作與結構化整理方式，高效管理大量聊天內容。",
-    imageSrc: "/feature1.png",
+    media: {
+      type: "image",
+      src: "/feature1.png",
+      alt: "聊天管理功能展示",
+    },
     imageRatio: 0.5,
     items: [
       "一次完成多筆聊天的封存、刪除與匯出",
@@ -133,7 +163,11 @@ export const FEATURE_BLOCK_ZH = [
   {
     title: "更快輸入，更好掌控",
     description: "透過文字展開與鍵盤導向的操作方式，加快撰寫提示詞並提升輸入時的掌控感。",
-    imageSrc: "/feature2.png",
+    media: {
+      type: "image",
+      src: "/feature2.png",
+      alt: "更快輸入與更好掌控功能展示",
+    },
     imageRatio: 0.5,
     items: [
       "在輸入時將快捷字串展開為完整提示詞",
@@ -145,7 +179,11 @@ export const FEATURE_BLOCK_ZH = [
   {
     title: "個人化設定檔",
     description: "儲存多組個人化設定，並依不同任務、角色或寫作風格快速切換。",
-    imageSrc: "/feature3.png",
+    media: {
+      type: "image",
+      src: "/feature3.png",
+      alt: "個人化設定檔功能展示",
+    },
     imageRatio: 0.5,
     items: [
       "建立並儲存多組個人化設定檔",
@@ -167,13 +205,7 @@ interface FeaturesCollection {
 }
 
 interface FeatureBlocksCollection {
-  [key: `FEATURE_BLOCK_${string}`]: {
-    title: string;
-    description: string;
-    imageSrc: string;
-    imageRatio: number;
-    items: string[];
-  }[];
+  [key: `FEATURE_BLOCK_${string}`]: FeatureBlockItem[];
 }
 
 export const ALL_FEATURES: FeaturesCollection = {
