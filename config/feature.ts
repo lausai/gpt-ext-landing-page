@@ -139,6 +139,22 @@ export const FEATURE_BLOCK_EN: FeatureBlockItem[] = [
       "Keep your preferred setup ready for every task",
     ],
   },
+  {
+    title: "Notion Export",
+    description: "Send important chats to Notion and turn scattered conversations into a searchable, organized knowledge base.",
+    media: {
+      type: "video",
+      src: "https://xg329u6pheas2b8n.public.blob.vercel-storage.com/notion.mp4",
+      alt: "Notion export feature demo",
+    },
+    imageRatio: 0.5,
+    items: [
+      "Save individual chats or multiple selected conversations to Notion",
+      "Choose a destination page and keep exports organized in one place",
+      "Turn ChatGPT conversations into reusable notes inside your workspace",
+      "Keep important insights, prompts, and answers easy to find later",
+    ],
+  }
 ]
 
 
@@ -192,6 +208,22 @@ export const FEATURE_BLOCK_ZH: FeatureBlockItem[] = [
       "隨時套用最適合當下需求的設定",
     ],
   },
+  {
+    title: "匯出到 Notion",
+    description: "將重要對話儲存到 Notion，把零散的聊天內容整理成可搜尋、易於管理的知識庫。",
+    media: {
+      type: "video",
+      src: "https://xg329u6pheas2b8n.public.blob.vercel-storage.com/notion.mp4",
+      alt: "匯出到 Notion 功能展示",
+    },
+    imageRatio: 0.5,
+    items: [
+      "將單一對話或多個已選取的聊天批次儲存到 Notion",
+      "選擇儲存目的頁面，讓所有匯出內容集中整理",
+      "把 ChatGPT 對話轉成可在工作空間中重複利用的筆記",
+      "讓重要洞察、提示詞與回答之後都能快速找到",
+    ],
+  }
 ]
 
 
