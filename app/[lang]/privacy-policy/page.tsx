@@ -16,7 +16,7 @@ export default async function PrivacyPolicyPage({
             AI Chat Powerkit Privacy Policy        
         </h3>
         <h6 className="tracking-tight mt-2">
-        Last Updated: October 30, 2025
+        Last Updated: July 27, 2026
         </h6>
         <p className="text-xl">
             We take your privacy seriously. This Privacy Policy outlines what data we collect, how we use it, and how we protect it when you use our browser extension.
@@ -52,11 +52,28 @@ export default async function PrivacyPolicyPage({
           </ul>
         </div>
 
+        <SectionTitle text="Notion Integration and Export"></SectionTitle>
+        <div>
+          <p className="text-xl">
+            If you choose to enable the Notion feature, the extension will ask you to provide a Notion internal integration token. We use this token to verify your Notion connection, retrieve the list of pages that your integration is authorized to access, and remember the destination page you select for future exports.
+          </p>
+          <p className="text-xl pt-3">
+            When you choose to save a chat to Notion, the extension will access the selected ChatGPT conversation data, including the conversation title, conversation URL, and the message content you choose to export, and send that data to the Notion API to create a page in your Notion workspace.
+          </p>
+          <p className="text-xl pt-3">
+            The Notion token, selected destination page ID, and selected destination page name are stored locally in the extension&apos;s browser storage so the Notion feature can continue to work across sessions. We do not require you to enable the Notion feature in order to use the rest of the extension.
+          </p>
+          <p className="text-xl pt-3">
+            You may disconnect your Notion integration at any time from the extension settings. Disconnecting the integration stops future exports, but it does not automatically delete content that was already exported to your Notion workspace. Exported content remains subject to your own actions in Notion and Notion&apos;s policies.
+          </p>
+        </div>
+
+
         <SectionTitle text="Data Encryption and Security"></SectionTitle>
         <div>
           <ul className="list-disc list-inside">
             <ListItem content="Sensitive data such as chat UUIDs, settings, and expansions are encrypted before being stored in our servers."></ListItem>
-            <ListItem content="We do not store any chat content."></ListItem>
+            <ListItem content="We do not store any chat content on our own servers."></ListItem>
             <ListItem content="We do not use analytics tools like Google Analytics or other third-party trackers."></ListItem>
           </ul>
         </div>
@@ -69,7 +86,18 @@ export default async function PrivacyPolicyPage({
           <p className="text-xl pt-3">
             We use Paddle to process payments. To verify purchases, we match the email you enter at checkout (via Paddle) with the email used in our extension. This email is not &quot;shared&quot; with Paddle by us — you provide it during checkout, and we use it as a user identifier.
           </p>
+          <p className="text-xl pt-3">
+            If you use the Notion feature, relevant data is transmitted to Notion in order to provide the export functionality you requested. This may include your Notion integration token, authorized page metadata, selected destination page information, conversation title, conversation URL, and the conversation content you choose to export.
+          </p>
         </div>
+
+        <SectionTitle text="Data Retention"></SectionTitle>
+        <div>
+          <p className="text-xl">
+            For the Notion feature, the extension stores the Notion integration token and selected destination page settings locally until you disconnect the integration, clear the extension&apos;s local data, or uninstall the extension. Content exported to Notion is stored in your Notion workspace until you remove it there.
+          </p>
+        </div>
+
 
         <SectionTitle text="Your Rights"></SectionTitle>
         <div>
