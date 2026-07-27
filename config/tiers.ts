@@ -15,7 +15,6 @@ export const TIERS_EN: Array<Tier> = [
       "Create up to 2 custom instruction profiles",
       "Create up to 5 custom text expansions",
       "Bulk delete, archive, or export conversations",
-      "Unload older messages to keep long chats fast",
       "Basic prompt outline side panel",
       "Save individual chats to Notion",
       "Vim-inspired keybindings",
