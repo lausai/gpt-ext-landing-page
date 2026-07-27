@@ -75,12 +75,30 @@ export const FEATURES_ZH = [
   },
 ];
 
+interface FeatureBlockMedia {
+  type: "image" | "video";
+  src: string;
+  alt?: string;
+  poster?: string;
+}
 
-export const FEATURE_BLOCK_EN = [
+interface FeatureBlockItem {
+  title: string;
+  description: string;
+  media: FeatureBlockMedia;
+  imageRatio: number;
+  items: string[];
+}
+
+export const FEATURE_BLOCK_EN: FeatureBlockItem[] = [
   {
     title: "Chat Management",
     description: "Manage large volumes of conversations efficiently with bulk actions and structured organization.",
-    imageSrc: "/feature1.png",
+    media: {
+      type: "video",
+      src: "https://xg329u6pheas2b8n.public.blob.vercel-storage.com/folder.mp4",
+      alt: "Chat management feature demo",
+    },
     imageRatio: 0.5,
     items: [
       "Bulk archive, delete, and export chats in one action",
@@ -92,7 +110,11 @@ export const FEATURE_BLOCK_EN = [
   {
     title: "Faster Input, Smarter Control",
     description: "Speed up how you write prompts with text expansion and keyboard-driven navigation built directly into the chat input",
-    imageSrc: "/feature2.png",
+    media: {
+      type: "video",
+      src: "https://xg329u6pheas2b8n.public.blob.vercel-storage.com/te.mp4",
+      alt: "Faster input and smarter control feature demo",
+    },
     imageRatio: 0.5,
     items: [
       "Expand shortcuts into full prompts while typing",
@@ -104,7 +126,11 @@ export const FEATURE_BLOCK_EN = [
   {
     title: "Personalization Profiles",
     description: "Save multiple personalization profiles and switch between them to match different tasks, roles, or writing styles.",
-    imageSrc: "/feature3.png",
+    media: {
+      type: "video",
+      src: "https://xg329u6pheas2b8n.public.blob.vercel-storage.com/ci.mp4",
+      alt: "Personalization profiles feature demo",
+    },
     imageRatio: 0.5,
     items: [
       "Create and save multiple personalization profiles",
@@ -113,15 +139,35 @@ export const FEATURE_BLOCK_EN = [
       "Keep your preferred setup ready for every task",
     ],
   },
+  {
+    title: "Notion Export",
+    description: "Send important chats to Notion and turn scattered conversations into a searchable, organized knowledge base.",
+    media: {
+      type: "video",
+      src: "https://xg329u6pheas2b8n.public.blob.vercel-storage.com/notion.mp4",
+      alt: "Notion export feature demo",
+    },
+    imageRatio: 0.5,
+    items: [
+      "Save individual chats or multiple selected conversations to Notion",
+      "Choose a destination page and keep exports organized in one place",
+      "Turn ChatGPT conversations into reusable notes inside your workspace",
+      "Keep important insights, prompts, and answers easy to find later",
+    ],
+  }
 ]
 
 
 
-export const FEATURE_BLOCK_ZH = [
+export const FEATURE_BLOCK_ZH: FeatureBlockItem[] = [
   {
     title: "聊天管理",
     description: "透過批次操作與結構化整理方式，高效管理大量聊天內容。",
-    imageSrc: "/feature1.png",
+    media: {
+      type: "video",
+      src: "https://xg329u6pheas2b8n.public.blob.vercel-storage.com/folder.mp4",
+      alt: "聊天管理功能展示",
+    },
     imageRatio: 0.5,
     items: [
       "一次完成多筆聊天的封存、刪除與匯出",
@@ -133,7 +179,11 @@ export const FEATURE_BLOCK_ZH = [
   {
     title: "更快輸入，更好掌控",
     description: "透過文字展開與鍵盤導向的操作方式，加快撰寫提示詞並提升輸入時的掌控感。",
-    imageSrc: "/feature2.png",
+    media: {
+      type: "video",
+      src: "https://xg329u6pheas2b8n.public.blob.vercel-storage.com/te.mp4",
+      alt: "更快輸入與更好掌控功能展示",
+    },
     imageRatio: 0.5,
     items: [
       "在輸入時將快捷字串展開為完整提示詞",
@@ -145,7 +195,11 @@ export const FEATURE_BLOCK_ZH = [
   {
     title: "個人化設定檔",
     description: "儲存多組個人化設定，並依不同任務、角色或寫作風格快速切換。",
-    imageSrc: "/feature3.png",
+    media: {
+      type: "video",
+      src: "https://xg329u6pheas2b8n.public.blob.vercel-storage.com/ci.mp4",
+      alt: "個人化設定檔功能展示",
+    },
     imageRatio: 0.5,
     items: [
       "建立並儲存多組個人化設定檔",
@@ -154,6 +208,22 @@ export const FEATURE_BLOCK_ZH = [
       "隨時套用最適合當下需求的設定",
     ],
   },
+  {
+    title: "匯出到 Notion",
+    description: "將重要對話儲存到 Notion，把零散的聊天內容整理成可搜尋、易於管理的知識庫。",
+    media: {
+      type: "video",
+      src: "https://xg329u6pheas2b8n.public.blob.vercel-storage.com/notion.mp4",
+      alt: "匯出到 Notion 功能展示",
+    },
+    imageRatio: 0.5,
+    items: [
+      "將單一對話或多個已選取的聊天批次儲存到 Notion",
+      "選擇儲存目的頁面，讓所有匯出內容集中整理",
+      "把 ChatGPT 對話轉成可在工作空間中重複利用的筆記",
+      "讓重要洞察、提示詞與回答之後都能快速找到",
+    ],
+  }
 ]
 
 
@@ -167,13 +237,7 @@ interface FeaturesCollection {
 }
 
 interface FeatureBlocksCollection {
-  [key: `FEATURE_BLOCK_${string}`]: {
-    title: string;
-    description: string;
-    imageSrc: string;
-    imageRatio: number;
-    items: string[];
-  }[];
+  [key: `FEATURE_BLOCK_${string}`]: FeatureBlockItem[];
 }
 
 export const ALL_FEATURES: FeaturesCollection = {

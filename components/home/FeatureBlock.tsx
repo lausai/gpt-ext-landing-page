@@ -1,7 +1,12 @@
 type FeatureBlockProps = {
   title: string
   description: string
-  imageSrc: string
+  media: {
+    type: 'image' | 'video'
+    src: string
+    alt?: string
+    poster?: string
+  }
   items?: string[]
   reverse?: boolean
   imageRatio?: number // 0.5 = 50%, 0.6 = 60%
@@ -27,7 +32,7 @@ function CheckIcon() {
 export function FeatureBlock({
   title,
   description,
-  imageSrc,
+  media,
   items = [],
   reverse = false,
   imageRatio = 0.5,
@@ -41,13 +46,25 @@ export function FeatureBlock({
         reverse ? 'lg:flex-row-reverse' : ''
       }`}
     >
-      {/* Image */}
+      {/* Media */}
       <div className="w-full" style={{ width: imageWidth }}>
-        <img
-          src={imageSrc}
-          alt={title}
-          className="w-full rounded-xl shadow-sm"
-        />
+        {media.type === 'video' ? (
+          <video
+            src={media.src}
+            controls
+            playsInline
+            preload="metadata"
+            poster={media.poster}
+            aria-label={media.alt ?? title}
+            className="w-full rounded-xl shadow-sm"
+          />
+        ) : (
+          <img
+            src={media.src}
+            alt={media.alt ?? title}
+            className="w-full rounded-xl shadow-sm"
+          />
+        )}
       </div>
 
       {/* Text */}
@@ -82,4 +99,3 @@ export function FeatureBlock({
     </div>
   )
 }
-
